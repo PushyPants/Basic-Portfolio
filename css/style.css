@@ -24,6 +24,7 @@ footer{
     padding: 20px 0 10px 0;
     text-align: center;
     color: #CCCCCC;
+    z-index: 3;
 }
 
 
@@ -83,7 +84,7 @@ footer{
         }
 
 #mainContent{
-    margin: 30px auto;
+    margin: 30px auto 125px auto;
     max-width: 960px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -103,7 +104,6 @@ footer{
 
 .contentInner img {
     height: 100%;
-    overflow: 
     margin: 0 15px 15px 0;
     float: left;
 }
@@ -138,27 +138,31 @@ button.submit{
     margin: 0 -10px;
 }
 
-.portfolioItem{
-    display: flex;
+.itemWrapper{
+    position: relative;
     width: 275px;
     height: 275px;
+    overflow: hidden
+}
+
+.portfolioItem{
     background-color: grey;
     margin: 15px;
 }
 
 .portfolioItem label{
-    position: relative;
+    position: absolute;
     z-index: 2;
-    bottom: 50px;
+    bottom: 25px;
     width: 100%;
     padding: 20px 0;
     background-color: #777777;
-    color: white
+    color: white;
+    text-align: center;ß
 }
 
 .portfolioItem img {
     height: 100%;
-    overflow: hidden;
 }
 
 .wrap{
